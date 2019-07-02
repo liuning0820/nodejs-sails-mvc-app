@@ -2,6 +2,25 @@
 
 a [Sails v1](https://sailsjs.com) application
 
+## Organisation of this lab
+
+In this lab, we will start by building a simple Node.js application as an HTTP Rest API exposing CRUD (Create / Read / Update / Delete) verbs on a *message* model.
+
+HTTP verb | URI | Action
+----------| --- | ------
+GET | /message | list all messages
+GET | /message/ID | get message with ID
+POST | /message | create a message user
+PUT | /message/ID | modify message with ID
+DELETE | /message/ID | delete message with ID
+
+[Build the application](00_application.md)
+
+Build and Run in container:
+
+```sh
+docker build -t message-app:v0.1 .
+```
 
 ### Links
 
